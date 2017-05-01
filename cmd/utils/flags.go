@@ -233,7 +233,7 @@ var (
 	GasPriceFlag = BigFlag{
 		Name:  "gasprice",
 		Usage: "Minimal gas price to accept for mining a transactions",
-		Value: big.NewInt(20 * params.Shannon),
+		Value: big.NewInt(50 * params.Shannon),
 	}
 	ExtraDataFlag = cli.StringFlag{
 		Name:  "extradata",
