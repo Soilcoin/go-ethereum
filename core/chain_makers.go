@@ -20,15 +20,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/consensus/ethash"
+	"github.com/Soilcoin/go-soil/consensus/misc"
+	"github.com/Soilcoin/go-soil/core/state"
+	"github.com/Soilcoin/go-soil/core/types"
+	"github.com/Soilcoin/go-soil/core/vm"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/event"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 // So we can deterministically seed different blockchains

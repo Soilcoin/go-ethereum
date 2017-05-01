@@ -21,8 +21,8 @@ package main
 import (
 	"io"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/internal/debug"
+	"github.com/Soilcoin/go-soil/cmd/utils"
+	"github.com/Soilcoin/go-soil/internal/debug"
 	"gopkg.in/urfave/cli.v1"
 )
 

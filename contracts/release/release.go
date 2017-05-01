@@ -25,15 +25,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Soilcoin/go-soil/accounts/abi/bind"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/eth"
+	"github.com/Soilcoin/go-soil/internal/ethapi"
+	"github.com/Soilcoin/go-soil/les"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/node"
+	"github.com/Soilcoin/go-soil/p2p"
+	"github.com/Soilcoin/go-soil/rpc"
 )
 
 // Interval to check for new releases

@@ -20,13 +20,13 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Soilcoin/go-soil"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/common/hexutil"
+	"github.com/Soilcoin/go-soil/core/types"
+	"github.com/Soilcoin/go-soil/internal/ethapi"
+	"github.com/Soilcoin/go-soil/rlp"
+	"github.com/Soilcoin/go-soil/rpc"
 )
 
 // ContractBackend implements bind.ContractBackend with direct calls to Ethereum

@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/event"
+	"github.com/Soilcoin/go-soil/accounts"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/event"
 )
 
 var testSigData = make([]byte, 32)

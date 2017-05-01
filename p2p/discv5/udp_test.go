@@ -27,9 +27,9 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/crypto"
+	"github.com/Soilcoin/go-soil/rlp"
 )
 
 func init() {

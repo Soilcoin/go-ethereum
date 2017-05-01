@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 func TestTransactions(t *testing.T) {

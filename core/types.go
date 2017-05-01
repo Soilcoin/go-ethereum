@@ -19,9 +19,9 @@ package core
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/Soilcoin/go-soil/core/state"
+	"github.com/Soilcoin/go-soil/core/types"
+	"github.com/Soilcoin/go-soil/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

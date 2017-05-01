@@ -25,9 +25,9 @@ import (
 	"sync"
 
 	"bytes"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/swarm/storage"
 	"mime"
 	"path/filepath"
 	"time"
@@ -103,7 +103,6 @@ func (self *Api) Resolve(uri *URI) (storage.Key, error) {
 	}
 	return nil, fmt.Errorf("'%s' is not a content hash", uri.Addr)
 }
-
 
 // Put provides singleton manifest creation on top of dpa store
 func (self *Api) Put(content, contentType string) (storage.Key, error) {

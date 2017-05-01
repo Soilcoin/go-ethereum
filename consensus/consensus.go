@@ -18,11 +18,11 @@
 package consensus
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/core/state"
+	"github.com/Soilcoin/go-soil/core/types"
+	"github.com/Soilcoin/go-soil/params"
+	"github.com/Soilcoin/go-soil/rpc"
 )
 
 // ChainReader defines a small collection of methods needed to access the local

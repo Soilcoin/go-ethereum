@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/Soilcoin/go-soil/common"
 )
 
 type journalEntry interface {
@@ -71,8 +71,8 @@ type (
 		hash common.Hash
 	}
 	touchChange struct {
-		account *common.Address
-		prev    bool
+		account   *common.Address
+		prev      bool
 		prevDirty bool
 	}
 )

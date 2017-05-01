@@ -23,10 +23,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Soilcoin/go-soil/common/mclock"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/light"
+	"github.com/Soilcoin/go-soil/log"
 )
 
 var (

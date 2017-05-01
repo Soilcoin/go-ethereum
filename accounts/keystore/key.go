@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/Soilcoin/go-soil/accounts"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/crypto"
 	"github.com/pborman/uuid"
 )
 

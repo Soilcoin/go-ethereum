@@ -23,10 +23,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/core"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)

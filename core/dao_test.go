@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/consensus/ethash"
+	"github.com/Soilcoin/go-soil/core/vm"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/event"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 // Tests that DAO-fork enabled clients can properly filter out fork-commencing

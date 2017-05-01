@@ -26,11 +26,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/common/math"
+	"github.com/Soilcoin/go-soil/crypto"
+	"github.com/Soilcoin/go-soil/crypto/ecies"
+	"github.com/Soilcoin/go-soil/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

@@ -27,13 +27,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/Soilcoin/go-soil/common/mclock"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/p2p"
+	"github.com/Soilcoin/go-soil/p2p/discover"
+	"github.com/Soilcoin/go-soil/p2p/discv5"
+	"github.com/Soilcoin/go-soil/rlp"
 )
 
 const (

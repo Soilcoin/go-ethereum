@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/common/math"
 )
 
 // calculates the memory size required for a step

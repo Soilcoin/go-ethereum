@@ -23,9 +23,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/swarm/storage"
+	"github.com/Soilcoin/go-soil/swarm/testutil"
 )
 
 func TestBzzrGetPath(t *testing.T) {

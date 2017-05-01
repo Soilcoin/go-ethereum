@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/core/types"
 )
 
 // headerCheckFn is a callback type for verifying a header's presence in the local chain.

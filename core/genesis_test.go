@@ -22,12 +22,12 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/consensus/ethash"
+	"github.com/Soilcoin/go-soil/core/vm"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/event"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 func TestDefaultGenesisBlock(t *testing.T) {

@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common/compiler"
+	"github.com/Soilcoin/go-soil/accounts/abi/bind"
+	"github.com/Soilcoin/go-soil/common/compiler"
 )
 
 var (

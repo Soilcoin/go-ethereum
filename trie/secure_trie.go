@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/log"
 )
 
 var secureKeyPrefix = []byte("secure-key-")

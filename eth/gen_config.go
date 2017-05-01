@@ -5,11 +5,11 @@ package eth
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/common/hexutil"
+	"github.com/Soilcoin/go-soil/core"
+	"github.com/Soilcoin/go-soil/eth/downloader"
+	"github.com/Soilcoin/go-soil/eth/gasprice"
 )
 
 func (c Config) MarshalTOML() (interface{}, error) {

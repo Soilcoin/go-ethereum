@@ -23,9 +23,9 @@ import (
 
 	checker "gopkg.in/check.v1"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/crypto"
+	"github.com/Soilcoin/go-soil/ethdb"
 )
 
 type StateSuite struct {

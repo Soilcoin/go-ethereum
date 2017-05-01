@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/core/vm"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 type account struct{}

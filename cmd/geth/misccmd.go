@@ -25,10 +25,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/cmd/utils"
+	"github.com/Soilcoin/go-soil/consensus/ethash"
+	"github.com/Soilcoin/go-soil/eth"
+	"github.com/Soilcoin/go-soil/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

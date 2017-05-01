@@ -21,7 +21,7 @@ import (
 	"container/heap"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/Soilcoin/go-soil/common"
 )
 
 var iteratorEnd = errors.New("end of iteration")

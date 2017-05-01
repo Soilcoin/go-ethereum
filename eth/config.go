@@ -23,12 +23,12 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/common/hexutil"
+	"github.com/Soilcoin/go-soil/core"
+	"github.com/Soilcoin/go-soil/eth/downloader"
+	"github.com/Soilcoin/go-soil/eth/gasprice"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.

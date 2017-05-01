@@ -28,11 +28,11 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/contracts/release"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/cmd/utils"
+	"github.com/Soilcoin/go-soil/contracts/release"
+	"github.com/Soilcoin/go-soil/eth"
+	"github.com/Soilcoin/go-soil/node"
+	"github.com/Soilcoin/go-soil/params"
 	"github.com/naoina/toml"
 )
 

@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/swarm/storage"
 )
 
 // Handler for storage/retrieval related protocol requests

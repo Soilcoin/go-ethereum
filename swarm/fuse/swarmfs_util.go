@@ -20,7 +20,7 @@ package fuse
 
 import (
 	"fmt"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Soilcoin/go-soil/log"
 	"os/exec"
 	"runtime"
 	"time"

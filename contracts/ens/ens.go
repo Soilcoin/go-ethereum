@@ -22,11 +22,11 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens/contract"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/Soilcoin/go-soil/accounts/abi/bind"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/contracts/ens/contract"
+	"github.com/Soilcoin/go-soil/core/types"
+	"github.com/Soilcoin/go-soil/crypto"
 )
 
 // swarm domain name registry and resolver

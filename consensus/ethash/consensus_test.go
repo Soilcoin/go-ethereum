@@ -22,8 +22,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/common/math"
+	"github.com/Soilcoin/go-soil/params"
 )
 
 type diffTest struct {

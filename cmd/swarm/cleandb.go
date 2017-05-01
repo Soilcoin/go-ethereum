@@ -17,8 +17,8 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/Soilcoin/go-soil/cmd/utils"
+	"github.com/Soilcoin/go-soil/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

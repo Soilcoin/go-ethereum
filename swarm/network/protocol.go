@@ -37,13 +37,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/contracts/chequebook"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	bzzswap "github.com/ethereum/go-ethereum/swarm/services/swap"
-	"github.com/ethereum/go-ethereum/swarm/services/swap/swap"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/Soilcoin/go-soil/contracts/chequebook"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/p2p"
+	"github.com/Soilcoin/go-soil/p2p/discover"
+	bzzswap "github.com/Soilcoin/go-soil/swarm/services/swap"
+	"github.com/Soilcoin/go-soil/swarm/services/swap/swap"
+	"github.com/Soilcoin/go-soil/swarm/storage"
 )
 
 const (

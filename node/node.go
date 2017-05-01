@@ -27,13 +27,13 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/Soilcoin/go-soil/accounts"
+	"github.com/Soilcoin/go-soil/ethdb"
+	"github.com/Soilcoin/go-soil/event"
+	"github.com/Soilcoin/go-soil/internal/debug"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/p2p"
+	"github.com/Soilcoin/go-soil/rpc"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 )
 

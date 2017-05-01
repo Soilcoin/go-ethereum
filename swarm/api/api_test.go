@@ -23,9 +23,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/log"
+	"github.com/Soilcoin/go-soil/swarm/storage"
 )
 
 func testApi(t *testing.T, f func(*Api)) {

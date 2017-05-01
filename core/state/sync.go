@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/rlp"
+	"github.com/Soilcoin/go-soil/trie"
 )
 
 // StateSync is the main state synchronisation scheduler, which provides yet the

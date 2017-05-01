@@ -26,8 +26,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/internal/browser"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/Soilcoin/go-soil/cmd/internal/browser"
+	"github.com/Soilcoin/go-soil/params"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/Soilcoin/go-soil/accounts/keystore"
+	"github.com/Soilcoin/go-soil/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

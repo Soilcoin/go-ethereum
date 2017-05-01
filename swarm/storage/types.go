@@ -24,8 +24,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
+	"github.com/Soilcoin/go-soil/common"
+	"github.com/Soilcoin/go-soil/crypto/sha3"
 )
 
 type Hasher func() hash.Hash

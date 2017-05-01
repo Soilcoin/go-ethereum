@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/Soilcoin/go-soil/common"
 	"golang.org/x/tools/imports"
 )
 
