@@ -462,6 +462,23 @@ var (
 //
 // TODO (karalabe): Move the chain maker into this package and make this private!
 func AccumulateRewards(state *state.StateDB, header *types.Header, uncles []*types.Header) {
+	//HardFork
+	var pn = header.Number	
+	if pn.Cmp(params.HardFork1) < 0 {
+		blockReward = big.NewInt(8e+18)
+	}
+	
+	if pn.Cmp(params.HardFork1) > -1 {
+		blockReward = big.NewInt(4e+18)
+	}
+	
+	if pn.Cmp(params.HardFork3) > -1 {
+		blockReward = big.NewInt(1e+18)
+	}
+	
+	if pn.Cmp(params.HardFork4) > -1 {
+		blockReward = big.NewInt(3e+18)
+	} 	
 	reward := new(big.Int).Set(blockReward)
 	r := new(big.Int)
 	for _, uncle := range uncles {
