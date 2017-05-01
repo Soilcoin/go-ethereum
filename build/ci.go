@@ -57,7 +57,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/build"
+	"github.com/Soilcoin/go-soil/internal/build"
 )
 
 var (
