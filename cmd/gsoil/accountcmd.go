@@ -169,7 +169,7 @@ For non-interactive use the passphrase can be specified with the -password flag:
     geth --password <passwordfile> account import <keyfile>
 
 Note:
-As you can directly copy your encrypted accounts to another ethereum instance,
+As you can directly copy your encrypted accounts to another soil instance,
 this import mechanism is not needed when you transfer an account between
 nodes.
 `,
