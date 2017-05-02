@@ -9,7 +9,7 @@ RUN \
   apt-get remove -y golang git make gcc libc-dev && apt autoremove -y && apt-get clean && \
   rm -rf /go-ethereum
 
-EXPOSE 8545
-EXPOSE 30303
+EXPOSE 39421
+EXPOSE 30403
 
 ENTRYPOINT ["/geth"]
