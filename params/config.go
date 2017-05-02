@@ -28,8 +28,8 @@ var (
 	MainnetChainConfig = &ChainConfig{
 		ChainId:        MainNetChainID,
 		HomesteadBlock: MainNetHomesteadBlock,
-		DAOForkBlock:   MainNetDAOForkBlock,
-		DAOForkSupport: true,
+		DAOForkBlock:   nil,
+		DAOForkSupport: false,
 		EIP150Block:    MainNetHomesteadGasRepriceBlock,
 		EIP150Hash:     MainNetHomesteadGasRepriceHash,
 		EIP155Block:    MainNetSpuriousDragon,
