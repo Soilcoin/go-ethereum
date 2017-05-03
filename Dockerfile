@@ -1,14 +1,14 @@
 FROM alpine:3.5
 
-ADD . /go-ethereum
+ADD . /go-soil
 RUN \
   apk add --update git go make gcc musl-dev linux-headers && \
-  (cd go-ethereum && make geth)                           && \
-  cp go-ethereum/build/bin/geth /geth                     && \
+  (cd go-soil && make gsoil)                           && \
+  cp go-soil/build/bin/gsoil /gsoil                     && \
   apk del git go make gcc musl-dev linux-headers          && \
-  rm -rf /go-ethereum && rm -rf /var/cache/apk/*
+  rm -rf /go-soil && rm -rf /var/cache/apk/*
 
 EXPOSE 39421
 EXPOSE 30403
 
-ENTRYPOINT ["/geth"]
+ENTRYPOINT ["/gsoil"]
