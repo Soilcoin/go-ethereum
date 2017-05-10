@@ -7,14 +7,10 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 )](https://godoc.org/github.com/ethereum/go-ethereum)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/go-ethereum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-Automated builds are available for stable releases and the unstable master branch.
-Binary archives are published at https://gsoil.ethereum.org/downloads/.
+Builds are available for stable releases.
+Binary archives are published at https://github.com/Soilcoin/go-soil/releases
 
 ## Building the source
-
-For prerequisites and detailed build instructions please read the
-[Installation Instructions](https://github.com/ethereum/go-ethereum/wiki/Building-Soil)
-on the wiki.
 
 Building gsoil requires both a Go (version 1.7 or later) and a C compiler.
 You can install them using your favourite package manager.
@@ -28,7 +24,7 @@ or, to build the full suite of utilities:
 
 ## Executables
 
-The go-ethereum project comes with several wrappers/executables found in the `cmd` directory.
+The go-soil project comes with several wrappers/executables found in the `cmd` directory.
 
 | Command    | Description |
 |:----------:|-------------|
