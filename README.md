@@ -101,7 +101,7 @@ them.*
 One of the quickest ways to get Soil up and running on your machine is by using Docker:
 
 ```
-docker run -d --name ethereum-node -v /Users/alice/ethereum:/root \
+docker run -d --name soil-node -v /Users/alice/ethereum:/root \
            -p 8545:8545 -p 30303:30303 \
            ethereum/client-go --fast --cache=512
 ```
