@@ -46,47 +46,17 @@ var (
 	// Git SHA1 commit hash of the release (set via linker flags)
 	gitCommit = ""
 	// Ethereum address of the Geth release oracle.
-	// relOracle = common.HexToAddress("0xfa7b9770ca4cb04296cac84f37736d4041251cdf")
 	relOracle = common.HexToAddress("")
 	// The app that holds all commands and flags.
-	app = utils.NewApp(gitCommit, "the go-soil command line interface")
-)
-
-func init() {
-	// Initialize the CLI app and start Geth
-	app.Action = geth
-	app.HideVersion = true // we have a command to print the version
-	app.Copyright = "Copyright 2013-2017 The go-ethereum / go-soil Authors"
-	app.Commands = []cli.Command{
-		// See chaincmd.go:
-		initCommand,
-		importCommand,
-		exportCommand,
-		removedbCommand,
-		dumpCommand,
-		// See monitorcmd.go:
-		monitorCommand,
-		// See accountcmd.go:
-		accountCommand,
-		// walletCommand,
-		// See consolecmd.go:
-		consoleCommand,
-		attachCommand,
-		javascriptCommand,
-		// See misccmd.go:
-		makedagCommand,
-		versionCommand,
-		bugCommand,
-		licenseCommand,
-		// See config.go
-		dumpConfigCommand,
-	}
-
-	app.Flags = []cli.Flag{
+	app = utils.NewApp(gitCommit, "the go-ethereum command line interface")
+	// flags that configure the node
+	nodeFlags = []cli.Flag{
 		utils.IdentityFlag,
 		utils.UnlockedAccountFlag,
 		utils.PasswordFileFlag,
 		utils.BootnodesFlag,
+		utils.BootnodesV4Flag,
+		utils.BootnodesV5Flag,
 		utils.DataDirFlag,
 		utils.KeyStoreDirFlag,
 		utils.NoUSBFlag,
@@ -96,6 +66,13 @@ func init() {
 		utils.EthashDatasetDirFlag,
 		utils.EthashDatasetsInMemoryFlag,
 		utils.EthashDatasetsOnDiskFlag,
+		utils.TxPoolPriceLimitFlag,
+		utils.TxPoolPriceBumpFlag,
+		utils.TxPoolAccountSlotsFlag,
+		utils.TxPoolGlobalSlotsFlag,
+		utils.TxPoolAccountQueueFlag,
+		utils.TxPoolGlobalQueueFlag,
+		utils.TxPoolLifetimeFlag,
 		utils.FastSyncFlag,
 		utils.LightModeFlag,
 		utils.SyncModeFlag,
@@ -104,7 +81,6 @@ func init() {
 		utils.LightKDFFlag,
 		utils.CacheFlag,
 		utils.TrieCacheGenFlag,
-		utils.JSpathFlag,
 		utils.ListenPortFlag,
 		utils.MaxPeersFlag,
 		utils.MaxPendingPeersFlag,
@@ -119,22 +95,10 @@ func init() {
 		utils.NetrestrictFlag,
 		utils.NodeKeyFileFlag,
 		utils.NodeKeyHexFlag,
-		utils.RPCEnabledFlag,
-		utils.RPCListenAddrFlag,
-		utils.RPCPortFlag,
-		utils.RPCApiFlag,
-		utils.WSEnabledFlag,
-		utils.WSListenAddrFlag,
-		utils.WSPortFlag,
-		utils.WSApiFlag,
-		utils.WSAllowedOriginsFlag,
-		utils.IPCDisabledFlag,
-		utils.IPCPathFlag,
-		utils.ExecFlag,
-		utils.PreloadJSFlag,
 		utils.WhisperEnabledFlag,
 		utils.DevModeFlag,
-		utils.TestNetFlag,
+		utils.TestnetFlag,
+		utils.RinkebyFlag,
 		utils.VMEnableDebugFlag,
 		utils.NetworkIdFlag,
 		utils.RPCCORSDomainFlag,
@@ -147,6 +111,55 @@ func init() {
 		utils.ExtraDataFlag,
 		configFileFlag,
 	}
+
+	rpcFlags = []cli.Flag{
+		utils.RPCEnabledFlag,
+		utils.RPCListenAddrFlag,
+		utils.RPCPortFlag,
+		utils.RPCApiFlag,
+		utils.WSEnabledFlag,
+		utils.WSListenAddrFlag,
+		utils.WSPortFlag,
+		utils.WSApiFlag,
+		utils.WSAllowedOriginsFlag,
+		utils.IPCDisabledFlag,
+		utils.IPCPathFlag,
+	}
+)
+
+func init() {
+	// Initialize the CLI app and start Geth
+	app.Action = geth
+	app.HideVersion = true // we have a command to print the version
+	app.Copyright = "Copyright 2013-2017 The go-ethereum Authors"
+	app.Commands = []cli.Command{
+		// See chaincmd.go:
+		initCommand,
+		importCommand,
+		exportCommand,
+		removedbCommand,
+		dumpCommand,
+		// See monitorcmd.go:
+		monitorCommand,
+		// See accountcmd.go:
+		accountCommand,
+		walletCommand,
+		// See consolecmd.go:
+		consoleCommand,
+		attachCommand,
+		javascriptCommand,
+		// See misccmd.go:
+		makedagCommand,
+		versionCommand,
+		bugCommand,
+		licenseCommand,
+		// See config.go
+		dumpConfigCommand,
+	}
+
+	app.Flags = append(app.Flags, nodeFlags...)
+	app.Flags = append(app.Flags, rpcFlags...)
+	app.Flags = append(app.Flags, consoleFlags...)
 	app.Flags = append(app.Flags, debug.Flags...)
 
 	app.Before = func(ctx *cli.Context) error {
