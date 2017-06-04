@@ -24,14 +24,14 @@ Section "Gsoil" GETH_IDX
   createShortCut "$SMPROGRAMS\${APPNAME}\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "" ""
 
   # Firewall - remove rules (if exists)
-  SimpleFC::AdvRemoveRule "Gsoil incoming peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gsoil outgoing peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gsoil UDP discovery (UDP:30303)"
+  SimpleFC::AdvRemoveRule "Gsoil incoming peers (TCP:30403)"
+  SimpleFC::AdvRemoveRule "Gsoil outgoing peers (TCP:30403)"
+  SimpleFC::AdvRemoveRule "Gsoil UDP discovery (UDP:30343)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "Gsoil incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" 30303 "" "" ""
-  SimpleFC::AdvAddRule "Gsoil outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" "" 30303 "" ""
-  SimpleFC::AdvAddRule "Gsoil UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" "" 30303 "" ""
+  SimpleFC::AdvAddRule "Gsoil incoming peers (TCP:30403)" ""  6 1 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" 30403 "" "" ""
+  SimpleFC::AdvAddRule "Gsoil outgoing peers (TCP:30403)" ""  6 2 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" "" 30403 "" ""
+  SimpleFC::AdvAddRule "Gsoil UDP discovery (UDP:30403)" "" 17 2 1 2147483647 1 "$INSTDIR\gsoil.exe" "" "" "Soil" "" 30403 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
   ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gsoil.ipc"

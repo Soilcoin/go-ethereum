@@ -34,7 +34,7 @@ var (
 		EIP150Hash:      MainNetHomesteadGasRepriceHash,
 		EIP155Block:     MainNetSpuriousDragon,
 		EIP158Block:     MainNetSpuriousDragon,
-		MetropolisBlock: MainNetMetropolisBlock,
+		MetropolisBlock: nil,
 
 		Ethash: new(EthashConfig),
 	}

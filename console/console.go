@@ -253,6 +253,31 @@ func (c *Console) AutoCompleteInput(line string, pos int) (string, []string, str
 func (c *Console) Welcome() {
 	// Print some generic Geth metadata
 	fmt.Fprintf(c.printer, "Welcome to the Gsoil JavaScript console!\n\n")
+	fmt.Fprintf(c.printer, "               Nmhyso+//////+osyhmN               \n")
+	fmt.Fprintf(c.printer, "            ds+////////////////////+shN           \n")
+	fmt.Fprintf(c.printer, "         ds/////////////////////////: `sN         \n")
+	fmt.Fprintf(c.printer, "       h+///////////////////////////`  -mmN       \n")
+	fmt.Fprintf(c.printer, "     d+////////////////////////////.   .mmmmN     \n")
+	fmt.Fprintf(c.printer, "   N/////////////////////////////-     .mmmmmm    \n")
+	fmt.Fprintf(c.printer, "  N+ ://///////////////////////.       /mmmmmmm   \n")
+	fmt.Fprintf(c.printer, " N+:  -/////////////////////:.         smmmmmmmm  \n")
+	fmt.Fprintf(c.printer, " s/:   `-/////////////////:`          .dmmmmmmmmm \n")
+	fmt.Fprintf(c.printer, "d///      ./////////////:`            ymmmmmmmmmmN\n")
+	fmt.Fprintf(c.printer, "s///`       -//////////.             smmmmmmmmmmmm\n")
+	fmt.Fprintf(c.printer, "+///.        `:///////`            `smmmmmmmmmmmmm\n")
+	fmt.Fprintf(c.printer, "////:         `//////`            -hmmmmmmmmmmmmmm\n")
+	fmt.Fprintf(c.printer, "+////.         .////.           `odmmmmmmmmmmmmmmm\n")
+	fmt.Fprintf(c.printer, "s/////          ////          .odmmmmmmmmmmmmmmmmm\n")
+	fmt.Fprintf(c.printer, "d/////:         ///-        -sdmmmmmmmmmmmmmmmmmmN\n")
+	fmt.Fprintf(c.printer, " s/////-        ///`     .+hmmmmmmmmmmmmmmmmmmmmm \n")
+	fmt.Fprintf(c.printer, " N+/////-      .//-   `/ymmmmmmmmmmmmmmmmmmmmmmm  \n")
+	fmt.Fprintf(c.printer, "  No/////:     :/:  :sdddhhyhhddmmmmmmmmmmmmmmm   \n")
+	fmt.Fprintf(c.printer, "   Ns/////:`   -`-oo/-`         `-/oshdmmmmmhd    \n")
+	fmt.Fprintf(c.printer, "     d+/////`  /o:                     `.--:h     \n")
+	fmt.Fprintf(c.printer, "       h+++/`:y:                     `.:+ym       \n")
+	fmt.Fprintf(c.printer, "         do`oh.+yhhhhhhyyyysssssyyhhdmmmN         \n")
+	fmt.Fprintf(c.printer, "            NssmmmmmmmmmmmmmmmmmmmmmmN            \n")
+	fmt.Fprintf(c.printer, "                NNNmmmmmmmmmmmmNNN                \n\n")
 	c.jsre.Run(`
 		console.log("instance: " + web3.version.node);
 		console.log("coinbase: " + eth.coinbase);
