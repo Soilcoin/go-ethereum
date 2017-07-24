@@ -2,7 +2,7 @@
 # with Go source code. If you know what GOPATH is then you probably
 # don't need to bother with make.
 
-.PHONY: gsoil android ios gsoil-cross evm all test clean
+.PHONY: gsoil android ios gsoil-cross swarm evm all test clean
 .PHONY: gsoil-linux gsoil-linux-386 gsoil-linux-amd64 gsoil-linux-mips64 gsoil-linux-mips64le
 .PHONY: gsoil-linux-arm gsoil-linux-arm-5 gsoil-linux-arm-6 gsoil-linux-arm-7 gsoil-linux-arm64
 .PHONY: gsoil-darwin gsoil-darwin-386 gsoil-darwin-amd64
@@ -15,6 +15,11 @@ gsoil:
 	build/env.sh go run build/ci.go install ./cmd/gsoil
 	@echo "Done building."
 	@echo "Run \"$(GOBIN)/gsoil\" to launch gsoil."
+
+swarm:
+	build/env.sh go run build/ci.go install ./cmd/swarm
+	@echo "Done building."
+	@echo "Run \"$(GOBIN)/swarm\" to launch swarm."
 
 evm:
 	build/env.sh go run build/ci.go install ./cmd/evm
@@ -32,7 +37,7 @@ android:
 ios:
 	build/env.sh go run build/ci.go xcode --local
 	@echo "Done building."
-	@echo "Import \"$(GOBIN)/gsoil.framework\" to use the library."
+	@echo "Import \"$(GOBIN)/Geth.framework\" to use the library."
 
 test: all
 	build/env.sh go run build/ci.go test
